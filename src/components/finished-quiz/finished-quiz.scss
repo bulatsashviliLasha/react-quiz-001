@@ -1,0 +1,26 @@
+.finished-quiz{
+  padding: 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 0 10px;
+
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      i{
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.success {
+  color: rgb(161,240,69);
+}
+.error {
+  color: rgb(240, 87,109);
+}

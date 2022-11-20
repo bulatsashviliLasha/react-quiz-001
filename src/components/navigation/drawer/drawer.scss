@@ -23,6 +23,7 @@
 
     li{
       margin-bottom: 15px;
+      position: relative;
 
       a{
         color: #363d54;
@@ -35,6 +36,18 @@
 
         &:hover,&:active{
           opacity: .7;
+        }
+      }
+
+      .active{
+        &::before{
+          content: "";
+          width: 3px;
+          height: 70%;
+          background: #363d54;
+          position: absolute;
+          left: 0;
+          bottom: 11px;
         }
       }
     }

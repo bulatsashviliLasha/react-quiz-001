@@ -4,12 +4,13 @@ import Backdrop from "../../ui/backdrop/Backdrop";
 import "./drawer.scss";
 
 const links = [
-    {to: '/', label: 'List', exact: true},
-    {to: '/auth', label: 'Auth', exact: false},
-    {to: '/quiz-creator', label: 'Create quiz', exact: false},
+    {to: '/', label: 'List', },
+    {to: '/auth', label: 'Auth', },
+    {to: '/quiz-creator', label: 'Create quiz', },
 ]
 
 class Drawer extends Component {
+
 
     renderLinks () {
         return  links.map((link,index) => {
@@ -17,7 +18,6 @@ class Drawer extends Component {
                 <li key={index}>
                     <NavLink to={link.to}
                              exact={link.exact}
-                             activeClassName='active'
                              onClick={this.props.onClose}
                     >
                         {link.label}
